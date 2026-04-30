@@ -1,52 +1,49 @@
 body{
     margin: 0;
+}
+
+.container{
     height: 100vh;
-    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.topo,
+.baixo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.meio{
+    display: flex;
+    justify-content: center;
 }
 
 .quadrado{
     width: 100px;
     height: 100px;
-    position: absolute;
 }
-
 .q1{
     background-color: red;
-    top: 0;
-    left: 0;
 }
-
 .q2{
-    background-color: blue;
-    top: 0;
-    right: 0;
-}
-
-.q3{
     background-color: green;
-    bottom: 0;
-    left: 0;
 }
-
+.q3{
+    background-color: blue;
+}
 .q4{
     background-color: yellow;
-    bottom: 0;
-    right: 0;
 }
-.cima-centro{
+
+.meio-baixo{
     background-color: orange;
-    top: 20px;
-    left: calc(50% - 50px);
 }
-
-.baixo-centro{
-    background-color: pink;
-    bottom: 20px;
-    left: calc(50% - 50px);
-}
-
-.centro{
+.meio-topo{
     background-color: purple;
-    top: calc(50% - 50px);
-    left: calc(50% - 50px);
 }
+.centro{
+    background-color: pink;
+}   
