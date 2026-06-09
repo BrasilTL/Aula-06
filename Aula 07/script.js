@@ -1,3 +1,5 @@
+let resultado = document.querySelector('#resultado')
+
 function exibirNome(){
     let reg = /^[^0-9]*$/
     let nome = document.querySelector('#nome').value
@@ -12,23 +14,23 @@ function exibirNome(){
 function Somar(){
     let valA = Number(document.querySelector('#ValorA').value)
     let valB = Number(document.querySelector('#ValorB').value)
-    alert(valA + valB)
+    return resultado.innerHTML = valA + valB
 }
 
 function Sub(){
     let valA = Number(document.querySelector('#ValorA').value)
     let valB = Number(document.querySelector('#ValorB').value)
-    alert(valA - valB)
+    return resultado.innerHTML = valA - valB
 }
 
 function Mult(){
     let valA = Number(document.querySelector('#ValorA').value)
     let valB = Number(document.querySelector('#ValorB').value)
-    alert(valA * valB)
+    return resultado.innerHTML = valA * valB
 }
 
 function Div(){
     let valA = Number(document.querySelector('#ValorA').value)
     let valB = Number(document.querySelector('#ValorB').value)
-    alert(valA / valB)
+    return resultado.innerHTML = valA / valB
 }
