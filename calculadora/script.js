@@ -1,11 +1,31 @@
-let form = document.querySelector("#Calculadora")
+let somar = document.querySelector("#somar")
+let subtracao = document.querySelector("#subtracao")
+let divisao = document.querySelector("#divisao")
+let multiplicacao = document.querySelector("#multiplicacao")
 
-form.addEventListener("submit", (e) => {
-    e.preventDefault()
-    let ValA = Number(document.querySelector('#ValorA').value)
-    let ValB = Number(document.querySelector('#ValorB').value)
+let resposta = document.querySelector("#resposta")
 
-    let resposta = document.querySelector('#resposta')
+somar.addEventListener("click", () => {
+    let a = Number(document.querySelector("#ValA").value)
+    let b = Number(document.querySelector("#ValB").value)
 
-    return resposta.innerHTML = ValA + ValB
+    resposta.innerHTML = a + b
+})
+subtracao.addEventListener("click", () => {
+    let a = Number(document.querySelector("#ValA").value)
+    let b = Number(document.querySelector("#ValB").value)
+
+    resposta.innerHTML = a - b
+})
+divisao.addEventListener("click", () => {
+    let a = Number(document.querySelector("#ValA").value)
+    let b = Number(document.querySelector("#ValB").value)
+
+    resposta.innerHTML = a / b
+})
+multiplicacao.addEventListener("click", () => {
+    let a = Number(document.querySelector("#ValA").value)
+    let b = Number(document.querySelector("#ValB").value)
+
+    resposta.innerHTML = a * b
 })

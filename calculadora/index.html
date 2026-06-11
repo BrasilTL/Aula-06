@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
 </head>
 <body>
-    <form id="Calculadora">
-        <label for="ValorA">Número_1</label>
-        <input type="text" id="valorA" name="ValorA" placeholder="Digite um número">
-        <br>
-        <label for="ValorB">Número_2</label>
-        <input type="text" id="ValorB" name="ValorB" placeholder="Digite um número...">
-        <br>
-        <input type="submit" value="Soma">
-        <input type="submit" value="Subtração">
-        <input type="submit" value="Divisão">
-        <input type="submit" value="Multiplicação">
-    </form>
-    <script src="script.js"></script>
+    <label for="ValA">Número 1</label>
+    <input type="number" id="ValA" placeholder="Digite um número">
+    <br>
+    <label for="ValB">Número 2</label>
+    <input type="number" id="ValB" placeholder="Digite outro número">
+    <br>
+    <button id="somar">Somar</button>
+    <button id="subtracao">Subtrair</button>
+    <button id="divisao">Dividir</button>
+    <button id="multiplicacao">Multiplicar</button>
+    <h2>Resultado:</h2>
     <p id="resposta"></p>
+    <script src="script.js"></script>
+
 </body>
 </html>
